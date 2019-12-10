@@ -15,6 +15,11 @@ h1, h2, h3 {
   color: white;
 }
 
+.btn-social {
+  color: white;
+  font-size: 30px;
+}
+
 .container {
   width: 100%;
   padding-right: 15px;
@@ -73,10 +78,14 @@ h1, h2, h3 {
 
 /* about */
 .about-section {
-  background: rgb(90,90,90);
-  background: linear-gradient(128deg, rgba(90,90,90,1) 48%, rgba(0,0,6,0.96875) 50%, rgba(190,190,190,1) 50%);
+  background: rgb(214,213,213);
+  background: linear-gradient(130deg, rgba(214,213,213,1) 47%, rgba(90,90,90,1) 48%, rgba(121,121,121,1) 48%);
   color: #fff;
   padding: 50px;
+}
+
+.title {
+  color: #313131;
 }
 
 .about-text {
@@ -85,4 +94,23 @@ h1, h2, h3 {
 
 .about-area {
   padding-top: 50px;
+}
+
+/* footer */
+
+footer {
+  background-color: #313131;
+  color: #cecece;
+}
+
+
+/* media */
+@media screen and (max-width: 780px) {
+  .top-section {
+    filter: grayscale(120%);
+  }
+  .about-text {
+    padding-top: 30px;
+    text-align: center;
+  }
 }
