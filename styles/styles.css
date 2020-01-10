@@ -303,7 +303,7 @@ header {
   border-radius: 10px;
   z-index: 1;
   box-shadow: 0 0 0 8px rgba(248, 95, 115, .4);
-  background: #f85f73
+  background: #f85f73;
 }
 
 
@@ -330,15 +330,20 @@ header {
 
 /* Style the counter cards */
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(248, 95, 115, .4);
   padding: 16px;
   text-align: center;
-  background-color: #444;
+  background-color: #f85f73;
   color: white;
 }
 
-.fa {font-size:50px;}
+.fa-icon {
+  color: white;
+}
 
+.card-text {
+  color: white;
+}
 
 /* footer */
 .copyright {
