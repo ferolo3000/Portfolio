@@ -1,158 +1,282 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
 
 <head>
-  <!-- Required meta tags -->
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <!-- Bootstrap CSS -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+  <link rel="stylesheet" href="styles/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Muli|Raleway&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/34be1935d8.js" crossorigin="anonymous"></script>
-  <title>F3R</title>
+  <title></title>
 </head>
 
 <body>
-  <section class="top-section" id="header">
-
+  <header>
     <div class="container">
-
-      <!-- Nav Bar -->
-
-      <nav class="navbar navbar-expand-lg navbar-dark">
-
-        <a class="navbar-brand" href="">F3R</a>
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav1">
+        <a class="navbar-brand" href="#">F3R</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-
-          <ul class="navbar-nav ml-auto">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="#portfolio">PORTFOLIO</a>
+              <a class="nav-link" href="#portfolio">Portfolio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">ABOUT</a>
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience">Work Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#education">Education</a>
             </li>
           </ul>
-
         </div>
-
       </nav>
-
+    </div>
+  </header>
+  <section class="intro-section">
+    <div class="container">
       <div class="row">
-        <div class="col-lg-12">
-          <div class="hello-msg">
-            <h1>FERNANDA ROMERO</h1>
-            <h4>FULL-STACK WEB DEVELOPER</h4>
-            <div class="btn-group" role="group" aria-label="social-networks">
-              <button type="button" class="btn"><a href="https://github.com/ferolo3000" target="_blank" class="btn-social"><i class="fab fa-github"></i></a></button>
-              <button type="button" class="btn"><a href="https://www.linkedin.com/in/fernandaromerolo/" target="_blank" class="btn-social"><i class="fab fa-linkedin"></i></a></button>
-              <button type="button" class="btn"><a href="mailto:test@test.com" target="_blank" class="btn-social"><i class="far fa-envelope"></i></a></button>
-            </div>
+        <div class="col-md-1 col-lg-2"></div>
+        <div class="col-md-10 col-lg-8">
+          <div class="intro">
+            <div class="profile-img"><img src="images/fer.jpg" alt=""></div>
+            <h2><b>Fernanda Romero</b></h2>
+            <h5 class="font-pink">FULLSTACK WEB DEVELOPER</h5>
+            <br>
+            <ul class="social-icons">
+              <li><a href="#"><i class="fas fa-envelope"></i></a></li>
+              <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+              <li><a href="#"><i class="fab fa-github"></i></a></li>
+            </ul>
           </div>
-
         </div>
-
       </div>
     </div>
   </section>
 
-  <section class="bg-light" id="portfolio">
-    <div class="container py-5">
-      <h2 class="title">PORTFOLIO</h2>
+  <!-- portfolio -->
+  <section class="portfolio-section section" id="portfolio">
+    <div class="container">
       <div class="row">
-        <div class="col-md-4 card-box">
-          <div class="card mb-4 box-shadow">
-            <img class="card-img-top" src="images/placeholder-red.png" />
-            <div class="overlay">
-              <div class="text">Hello World</div>
-            </div>
+        <div class="col-sm-4">
+          <div class="heading">
+            <h3><b>Portfolio</b></h3>
+            <h6 class="font-lite-black"><b>MY WORK</b></h6>
           </div>
         </div>
-        <div class="col-md-4 card-box">
-          <div class="card mb-4 box-shadow">
-            <img class="card-img-top" src="images/placeholder-blue.png" />
-            <div class="overlay">
-              <div class="text">Hello World</div>
-            </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 card-box">
+        <div class="card mb-4 box-shadow">
+          <img class="card-img-top" src="images/placeholder-red.png">
+          <div class="overlay">
+            <div class="text">Hello World</div>
           </div>
         </div>
-        <div class="col-md-4 card-box">
-          <div class="card mb-4 box-shadow">
-            <img class="card-img-top" src="images/placeholder-green.png" />
-            <div class="overlay">
-              <div class="text">Hello World</div>
-            </div>
+      </div>
+      <div class="col-md-4 card-box">
+        <div class="card mb-4 box-shadow">
+          <img class="card-img-top" src="images/placeholder-blue.png">
+          <div class="overlay">
+            <div class="text">Hello World</div>
           </div>
         </div>
-
+      </div>
+      <div class="col-md-4 card-box">
+        <div class="card mb-4 box-shadow">
+          <img class="card-img-top" src="images/placeholder-green.png">
+          <div class="overlay">
+            <div class="text">Hello World</div>
+          </div>
         </div>
-        <div class="row">
-          <div class="col-md-4 card-box">
-            <div class="card mb-4 box-shadow">
-              <img class="card-img-top" src="images/placeholder-blue.png" />
-              <div class="overlay">
-                <div class="text">Hello World</div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 card-box">
-            <div class="card mb-4 box-shadow">
-              <img class="card-img-top" src="images/placeholder-green.png" />
-              <div class="overlay">
-                <div class="text">Hello World</div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 card-box">
-            <div class="card mb-4 box-shadow">
-              <img class="card-img-top" src="images/placeholder-red.png" />
-              <div class="overlay">
-                <div class="text">Hello World</div>
-              </div>
-            </div>
-          </div>
-
-          </div>
       </div>
 
-  </section>
-
-  <section id="about" class="about-section">
-    <div class="container-fluid">
-      <h2 class="title">ABOUT</h2>
-      <div class="row about-area">
-        <div class="col-lg-6">
-          <img src="images/myAvatar.png" class="avatar">
+    </div>
+    <div class="row">
+      <div class="col-md-4 card-box">
+        <div class="card mb-4 box-shadow">
+          <img class="card-img-top" src="images/placeholder-red.png">
+          <div class="overlay">
+            <div class="text">Hello World</div>
+          </div>
         </div>
-        <div class="col-lg-6 about-text">
-          <p class="about-content">Hello there I am Fernanda.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Eu mi bibendum neque egestas congue quisque.
-          Suscipit adipiscing bibendum est ultricies integer quis auctor elit sed.
-          Eu mi bibendum neque egestas congue quisque.
-          Suscipit adipiscing bibendum est ultricies integer quis auctor elit sed</p>
+      </div>
+      <div class="col-md-4 card-box">
+        <div class="card mb-4 box-shadow">
+          <img class="card-img-top" src="images/placeholder-blue.png">
+          <div class="overlay">
+            <div class="text">Hello World</div>
+          </div>
         </div>
-
+      </div>
+      <div class="col-md-4 card-box">
+        <div class="card mb-4 box-shadow">
+          <img class="card-img-top" src="images/placeholder-green.png">
+          <div class="overlay">
+            <div class="text">Hello World</div>
+          </div>
+        </div>
       </div>
 
     </div>
 
+
+  </section>
+  <section class="about-section section" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="heading">
+            <h3><b>About me</b></h3>
+            <h6 class="font-lite-black"><b>PROFESSIONAL PATH</b></h6>
+          </div>
+        </div>
+        <div class="col-sm-8">
+          <p class="margin-b-50">Duis non volutpat arcu, eu mollis tellus. Sed finibus aliquam neque
+            sit amet sodales. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Nulla maximus pellentes que velit, quis consequat nulla effi citur at.
+            Maecenas sed massa tristique.Duis non volutpat arcu, eu mollis tellus.
+            Sed finibus aliquam neque sit amet sodales. Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Nulla maximus pellentes que velit, quis consequat nulla
+            effi citur at.Maecenas sed massa tristique.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="counter-section" id="counter">
+    <div class="container">
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <p><i class="fa fa-user"></i></p>
+            <h3>11+</h3>
+            <p>Partners</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <p><i class="fa fa-check"></i></p>
+            <h3>55+</h3>
+            <p>Projects</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <p><i class="fa fa-smile-o"></i></p>
+            <h3>100+</h3>
+            <p>Happy Clients</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <p><i class="fa fa-coffee"></i></p>
+            <h3>100+</h3>
+            <p>Meetings</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <footer id="footer">
-    <div class="footer-copyright text-center py-3">© 2019 Copyright F3R
+  <section class="experience-section section" id="experience">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="heading">
+            <h3><b>Work Experience</b></h3>
+            <h6 class="font-lite-black"><b>PREVIOUS JOBS</b></h6>
+          </div>
+        </div>
+        <div class="col-sm-8">
+          <div class="experience margin-b-50">
+            <h4><b>JUNIOR PROJECT MANAGER</b></h4>
+            <h5 class="font-pink"><b>DESIGN STUDIO</b></h5>
+            <h6 class="margin-t-10">MARCH 2015 - PRESENT</h6>
+            <p class="font-semi-white margin-tb-30">Duis non volutpat arcu, eu mollis tellus. Sed finibus aliquam neque sit amet sodales.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla maximus pellentes que velit,
+              quis consequat nulla effi citur at. Maecenas sed massa tristique.Duis non volutpat arcu,
+              eu mollis tellus. Sed finibus aliquam neque sit amet sodales. </p>
+            <ul class="list margin-b-30">
+              <li>Duis non volutpat arcu, eu mollis tellus.</li>
+              <li>Quis consequat nulla effi citur at.</li>
+              <li>Sed finibus aliquam neque sit.</li>
+            </ul>
+          </div>
+          <div class="experience margin-b-50">
+            <h4><b>WEB MASTER/WEB DEVELOPER</b></h4>
+            <h5 class="font-pink"><b>DESIGN &amp; WEB STUDIO</b></h5>
+            <h6 class="margin-t-10">APRIL 2014 - FEBRUARY 2015</h6>
+            <p class="font-semi-white margin-tb-30">Duis non volutpat arcu, eu mollis tellus. Sed finibus aliquam neque sit amet sodales.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla maximus pellentes que velit,
+              quis consequat nulla effi citur at. Maecenas sed massa tristique.Duis non volutpat arcu,
+              eu mollis tellus. Sed finibus aliquam neque sit amet sodales. </p>
+            <ul class="list margin-b-30">
+              <li>Duis non volutpat arcu, eu mollis tellus.</li>
+              <li>Quis consequat nulla effi citur at.</li>
+              <li>Sed finibus aliquam neque sit.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
+  <section class="education-section section" id="education">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="heading">
+            <h3><b>Education</b></h3>
+            <h6 class="font-lite-black"><b>ACADEMIC CAREER</b></h6>
+          </div>
+        </div>
+        <div class="col-sm-8">
+          <div class="education-wrapper">
+            <div class="education margin-b-50">
+              <h4><b>MASTER DEGREE IN SCIENCE</b></h4>
+              <h5 class="font-pink"><b>UCLA - SCIENCE AND ENGINEERING</b></h5>
+              <h6 class="font-lite-black margin-t-10">GRADUATED IN MAY 2010(2 YEARS)</h6>
+              <p class="margin-tb-30">Duis non volutpat arcu, eu mollis tellus. Sed finibus aliquam neque sit amet sodales.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla maximus pellentes que velit,
+                quis consequat nulla effi citur at. Maecenas sed massa tristique.Duis non volutpat arcu,
+                eu mollis tellus. Sed finibus aliquam neque sit amet sodales. </p>
+            </div>
+            <div class="education margin-b-50">
+              <h4><b>COURSE ON COMPUTER SCIENCE</b></h4>
+              <h5 class="font-pink"><b>NEW YORK PUBLIC UNIVERSITY</b></h5>
+              <h6 class="font-lite-black margin-t-10">GRADUATED IN MAY 2009(6 MONTHS)</h6>
+              <p class="margin-tb-30">Duis non volutpat arcu, eu mollis tellus. Sed finibus aliquam neque sit amet sodales.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla maximus pellentes que velit,
+                quis consequat nulla effi citur at. Maecenas sed massa tristique.Duis non volutpat arcu,
+                eu mollis tellus. Sed finibus aliquam neque sit amet sodales. </p>
+            </div>
+            <div class="education margin-b-50">
+              <h4><b>GRADUATED VALEDICTERIAN</b></h4>
+              <h5 class="font-pink"><b>PUBLIC COLLEGE</b></h5>
+              <h6 class="font-lite-black margin-t-10">GRADUATED IN MAY 2008(4 YEARS)</h6>
+              <p class="margin-tb-30">Duis non volutpat arcu, eu mollis tellus. Sed finibus aliquam neque sit amet sodales.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla maximus pellentes que velit,
+                quis consequat nulla effi citur at. Maecenas sed massa tristique.Duis non volutpat arcu,
+                eu mollis tellus. Sed finibus aliquam neque sit amet sodales. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <p class="copyright">
+      Made with <i class="fas fa-heart"></i> by F3R</a>
+    </p>
   </footer>
-
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
