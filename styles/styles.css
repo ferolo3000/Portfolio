@@ -282,6 +282,14 @@ header {
   border: 2px solid #fff
 }
 
+.read {
+  text-decoration: none;
+}
+
+.read:hover {
+  color: #f85f73;
+}
+
 /* education */
 .education-wrapper {
   position: relative
