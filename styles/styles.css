@@ -20,15 +20,30 @@ body {
   color: #333
 }
 
-h1,h2,h3,h4,
-h5,h6,p,a,ul,
-span,li,img,inpot,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+ul,
+span,
+li,
+img,
+inpot,
 button {
   margin: 0;
   padding: 0
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Muli', sans-serif;
   line-height: 1.5;
   font-weight: inherit
@@ -249,10 +264,10 @@ header {
 
 /* about */
 
- .skill {
-   color: white;
-   font-style: italic;
- }
+.skill {
+  color: white;
+  font-style: italic;
+}
 
 
 /* experience */
@@ -328,6 +343,7 @@ header {
 .counter-section {
   margin-bottom: 30px;
 }
+
 /* Float four columns side by side */
 .column {
   float: left;
@@ -335,7 +351,9 @@ header {
   padding: 0 5px;
 }
 
-.row {margin: 0 -5px;}
+.row {
+  margin: 0 -5px;
+}
 
 /* Clear floats after the columns */
 .row:after {
@@ -346,15 +364,15 @@ header {
 
 /* Style the counter cards */
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 16px;
   text-align: center;
-/*  background-color: #f85f73; */
+  /*  background-color: #f85f73; */
   color: white;
 }
 
 .card-skill {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 16px;
   text-align: center;
   background-color: #f85f73;
@@ -363,10 +381,10 @@ header {
 
 .card-skill:hover {
   transition: all 0.5s ease-out;
-    box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
-    top: -4px;
-    border: 1px solid #cccccc;
-    background-color: #283c63;
+  box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+  top: -4px;
+  border: 1px solid #cccccc;
+  background-color: #283c63;
 }
 
 .fa-icon {
@@ -379,7 +397,26 @@ header {
 
 .description {
   color: white;
+  font-size: medium;
 }
+
+.icon-link {
+  margin-left: 5px;
+  margin-top: 10px;
+  font-size: larger;
+}
+
+.icon-github:hover,
+.icon-link:hover {
+  color: #f85f73;
+}
+
+.icon-github {
+  margin-right: 5px;
+  margin-top: 10px;
+  font-size: larger;
+}
+
 
 /* footer */
 .copyright {
@@ -497,6 +534,7 @@ header {
     opacity: 0;
     transform: translateY(25%);
   }
+
   100% {
     opacity: 1;
     transform: none;
@@ -508,6 +546,7 @@ header {
     opacity: 0;
     transform: translateY(-25%);
   }
+
   100% {
     opacity: 1;
     transform: none;
@@ -519,16 +558,19 @@ header {
     opacity: 0;
     transform: translateX(25%);
   }
+
   100% {
     opacity: 1;
     transform: none;
   }
 }
+
 @keyframes slideInRight {
   0% {
     opacity: 0;
     transform: translateX(-25%);
   }
+
   100% {
     opacity: 1;
     transform: none;
@@ -539,6 +581,7 @@ header {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -549,6 +592,7 @@ header {
     opacity: 0;
     transform: scale(0.75);
   }
+
   100% {
     opacity: 1;
     transform: none;
@@ -563,23 +607,18 @@ header {
   will-change: transform, opacity;
 }
 
-.animations-disabled {
-  &,
-  [data-animation] {
-    animation: none !important;
-    opacity: 1 !important;
-  }
-}
-
 .slideInUp {
   animation-name: slideInUp;
 }
+
 .slideInDown {
   animation-name: slideInDown;
 }
+
 .slideInLeft {
   animation-name: slideInleft;
 }
+
 .slideInRight {
   animation-name: slideInRight;
 }
