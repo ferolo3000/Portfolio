@@ -430,11 +430,15 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 			text-align: center;
 			border-radius: 4px;
 			box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.25);
-			background-color: rgba(255, 255, 255, 0.075);
+      background-color: #000;
 			cursor: pointer;
 			outline: 0;
-			overflow: hidden;
-		}
+      overflow: hidden;
+
+    }
+    
+    .grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.1); }
 
 			.thumbnails a img {
 				display: block;
@@ -444,7 +448,8 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 			}
 
 			.thumbnails a h3 {
-				margin: 1em;
+        margin: 1em;
+
 			}
 
 			.thumbnails a:hover {
@@ -797,10 +802,10 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   }
 
   .logo {
-    background-color: #a2a2a2;
-    width: 50px;
-    border-radius: 10px;
-    opacity: .7;
+    background-color: #C51554;
+    width: 60px;
+    border-radius: 5px;
+    padding: 10px;
   }
 
   .element {
@@ -864,6 +869,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     width: 0;
     animation: linkAfter 0.5s 1s ease both;
   }
+  
   @-moz-keyframes pop {
     0% {
       transform: translateY(100%);
@@ -966,5 +972,76 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     margin-top: 150px;
   }
   
-  
+  /* bounce arrow */
+
+  @-moz-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+i {
+  display: block;
+  color: #fff;
+}
+.arrow {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -20px;
+  width: 40px;
+  height: 60px; /*change with size of arrow to make sit on bottom */
+/*   background-image: url(); */
+/*   background-size: contain; */
+}
+
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
     
